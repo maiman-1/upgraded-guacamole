@@ -1,0 +1,104 @@
+<!--
+NAME: MUHAMMAD AIMAN BIN SHAMSIEMON
+ID: 30148936
+ASSIGNMENT 1B TASK 4 QUESTION 1
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Enrolment</title>
+  </head>
+  <body>
+    <h1>Enrol a Student</h1>
+
+    <!--First Section is section for name-->
+    <div id="Section1">
+      <h2>Full Name</h2>
+      <!--Use placeholder to indicate what to write-->
+      <input
+      type="text"
+      id="firstName"
+      placeholder="First Name">
+      </input>
+      <input
+      type="text"
+      id="lastName"
+      placeholder="Last Name">
+      </input>
+      <br>
+    </div>
+
+    <!--Second Section is for date of birth
+  Figure how is DOB extracted in javascript-->
+    <div id="Section2">
+      <h2>DOB</h2>
+      <input
+      type="date"
+      id="dateOfBirth"></input>
+      <br>
+      <br>
+    </div>
+
+    <!--Third Section: Student's gender
+  Alternate between radio and label tag-->
+    <div>
+      <h2>Gender</h2>
+      <!--Male selection-->
+      <input type="radio" id="gender" value="Male"></input>
+      <label for="male">Male</label>
+      <br>
+      <!--Female selection-->
+      <input type="radio" id="gender" value="Female"></input>
+      <label for="female">Female</label>
+      <br>
+      <!--other selection-->
+      <input type="radio" id="gender" value="Other"></input>
+      <label for="female">Other</label>
+      <br>
+      <!--To extract, use .getElementByName instead-->
+    </div>
+
+    <!--Fourth Type is country. Using select to get dropdown
+    list, Use option for each value. Malaysia. Australia,
+  New Zealand-->
+    <div>
+      <h2>Country</h2>
+      <select id="country" placeholder="Select One">
+        <option value="None">Select One</option>
+        <option value="australia">Australia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="newZealad">New Zealand</option>
+      </select>
+      <br>
+    </div>
+
+    <!--Fifth Section: Address. Text Input-->
+    <div>
+      <h2>Address</h2>
+      <input type="text" id="address" placeholder="Address"></input>
+      <br>
+    </div>
+
+    <!--Sixth Section: Email Address. Email Input. Find out how
+  data from email is accessed-->
+  <div>
+    <h2>Email Address</h2>
+    <input type="email"
+     id="emailAddress"
+     placeholder="Email Address"></input>
+     <br>
+  </div>
+
+  <!--Button to submit information-->
+  <br>
+  <button id="submit">Submit</button>
+  <br>
+  <br>
+
+  <!--Empty section to display result-->
+  <div id="resultArea">
+    <h1>Output</h1>
+    <script src="A1b-T4-Q1.js"></script>
+  </div>
+  </body>
+</html>

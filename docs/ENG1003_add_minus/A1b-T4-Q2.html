@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Simple</title>
+		<link rel="stylesheet" href="A1b-T4-Q2.css" type="text/css"/>
+	</head>
+
+	<body>
+		<div>
+			<div class="headingBlock">
+				<h2>A Very <span id="simple">Simple</span> Web Application</h2>
+				<h4>Addition and Substraction Only</h4>
+			</div>
+
+			<div>
+				<input id="number1" type="number" size="4"/><label>
+					<img src="images/green addition op.png" id="img1"> </label>
+				<input id="number2" type="number" size="4"/><label>
+					<img src="images/green addition op.png" id="img2"> </label>
+				<input id="number3" type="number" size="4"/><label>
+					<img src="images/blue equals op.png" onClick="calculate()"></label>
+				<label id="answer"></label>
+				<label id="evenOdd"></label>
+			</div>
+
+			<div>
+				<button id="calculate" type="button" onClick="calculate()">Run</button>
+			</div>
+			<div>&copy; <a href="https://monash.edu">Monash University</a>
+			</div>
+		</div>
+	</body>
+	<script src="A1b-T4-Q2.js" type="text/javascript"></script>
+</html>
+
+<!-- HTML comment -->
+<!--For some reason, the file path in atom uses \ for separation instead
+of /-->

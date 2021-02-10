@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Locker System</title>
+    <!-- Import MDL libraries -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Import Color Picker library -->
+    <script src="libs/jscolor.js"></script>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Digital Locker System</span>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h2>
+                            Locker: <span id="lockerId"></span>&nbsp;<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="deleteLocker"><i class="material-icons">delete_forever</i></button>
+                        </h2>
+                        <div>
+                            <!-- Placeholder for 'Content' section / information of the current locker -->
+                            <h4>Contents</h4>
+                            <div id="lockerContents">
+                              <!--Text here-->
+                            </div>
+
+                        </div>
+                            <!-- Placeholder for 'Locker settings' section -->
+                            <h4>Settings</h4>
+                            <!-- Textfield with Floating Label (lockerLabel) -->
+                            <!-- Simple Textfield -->
+                            <form action="#">
+                              <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="lockerLabel">
+                                <label class="mdl-textfield__label" for="lockerLabel">Change Locker Label</label>
+                              </div>
+                            </form>
+
+
+                            <!-- Textfield with Floating Label (lockerColor) -->
+                            <form action="#">
+                              <div class="mdl-textfield mdl-js-textfield">
+                                <input class="jscolor mdl-textfield__input" type="text" id="lockerColor" >
+                                <label class="mdl-textfield__label" for="lockerColor">Change Locker Color</label>
+                              </div>
+                            </form>
+
+                        <div>
+                            <!-- Placeholder for buttons -->
+                            <!-- Blue  button with ripple -->
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="lockLocker()">
+                              Lock Locker
+                            </button>
+                            <!-- Pink button with ripple -->
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="closeLocker()">
+                              Close Locker
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Attach JS files -->
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/view.js"></script>
+</body>
+</html>
