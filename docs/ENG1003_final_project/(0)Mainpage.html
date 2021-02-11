@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+    	<meta charset="utf-8">
+    	<title>Main page</title>
+    	<link rel="stylesheet" href="FlightScheduleMap.css">
+    	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    	<script src="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js"></script>
+			<link href="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css" rel="stylesheet" />
+			<script src="https://eng1003.monash/libs/services.js"></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+
+    <div class="mdl-layout mdl-js-layout">
+	  <header class="mdl-layout__header mdl-layout__header--scroll">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-layout-title">Main Page</span>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">Title</span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="">Main Page</a>
+	      <a class="mdl-navigation__link" href="(1)DepartureMap.html">Schedule a Flight</a>
+	      <a class="mdl-navigation__link" href="FlightDetailList.html">Fight Details</a>
+	      <a class="mdl-navigation__link" href="FleetDetails.html">Fleet Information</a>
+	    </nav>
+	  </div>
+
+	<body>
+
+    	<div id="map" class="page-block" style="margin-top: 100px;"></div>
+		  	<button id="show" onclick="showOnMap()">View routes</button>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="scripts/FlightShared.js"></script>
+	<script type="text/javascript" src="scripts/Mainpage.js"></script>
+	<script type="text/javascript" src="scripts/MainpageShow2.js"></script>
+</div>
+</html>

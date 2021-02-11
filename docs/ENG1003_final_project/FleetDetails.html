@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+			<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+				<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+				<meta charset="utf-8">
+					<title>>Fleet Details</title>
+				</head>
+				<!-- Uses a header that scrolls with the text, rather than staying
+  		locked at the top -->
+				<div class="mdl-layout mdl-js-layout">
+					<header class="mdl-layout__header mdl-layout__header--scroll">
+						<div class="mdl-layout__header-row">
+							<!-- Title -->
+							<span class="mdl-layout-title">Fleet Details</span>
+						</div>
+					</header>
+					<div class="mdl-layout__drawer">
+						<span class="mdl-layout-title">Title</span>
+						<nav class="mdl-navigation">
+							<a class="mdl-navigation__link" href="(0)Mainpage.html">Main Page</a>
+						 <a class="mdl-navigation__link" href="(1)DepartureMap.html">Schedule a Flight</a>
+						 <a class="mdl-navigation__link" href="FlightDetailList.html">Fight Details</a>
+						 <a class="mdl-navigation__link" href="FleetDetails.html">Fleet Information</a>
+						</nav>
+					</div>
+					<main class="mdl-layout__content">
+						<div class="page-content">
+							<body>
+								<!--Body content-->
+
+								<div class="mdl-grid">
+								  <div class="mdl-cell mdl-cell--4-col">
+										<!--Set option for sorting-->
+										<!-- Without floating label -->
+										<div class="mdl-textfield mdl-js-textfield">
+											<select class="mdl-textfield__input" id="fleetDetailSort" name="list1">
+												<option value=""></option>
+												<option value="id">Flight ID</option>
+												<option value="registration">Registration</option>
+												<option value="location">Location</option>
+												<option value="range">Range</option>
+												<option value="avgSpeed">Speed</option>
+												<option value="type">Type</option>
+												<option value="status">Status</option>
+												<option value="airline">Airlines</option>
+											</select>
+											<label class="mdl-textfield__label" for="list1">Sort By</label>
+										</div>
+									</div>
+								</div>
+
+
+								<table class="mdl-data-table mdl-js-data-table">
+									<main class="mdl-layout__content">
+										<div class="page-content" >
+												<thead id="fleetOutputHead">
+													<tr>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >ID </th>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >Registration </th>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >Location</th>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >Range</th>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >Type</th>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >Status</th>
+														<th class="mdl-data-table__cell--non-numeric" style = "text-align:center" >Airline</th>
+													</tr>
+												</thead>
+												<tbody id="fleetOutput">
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Flight Number</td>
+														<td class="mdl-data-table__cell--non-numeric"> (MK403) </td>
+														<td class="mdl-data-table__cell--non-numeric"> (MK403) </td>
+														<td class="mdl-data-table__cell--non-numeric"> (MK403) </td>
+														<td class="mdl-data-table__cell--non-numeric"> (MK403) </td>
+														<td class="mdl-data-table__cell--non-numeric"> (MK403) </td>
+														<td class="mdl-data-table__cell--non-numeric"> (MK403) </td>
+													</tr>
+												</tbody>
+											</div>
+										</div>
+									</main>
+								</table>
+
+							</div>
+						</main>
+						<script src="scripts/FlightShared.js" charset="utf-8"></script>
+						<script src="scripts/FleetDetails.js" charset="utf-8"></script>
+					</body>
+				</div>
+			</html>

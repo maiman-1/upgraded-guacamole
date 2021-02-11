@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<title>Arrival Airport Details</title>
+</head>
+
+<div class="mdl-layout mdl-js-layout">
+<header class="mdl-layout__header mdl-layout__header--scroll">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">Arrival Airport Details</span>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">Title</span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="(0)Mainpage.html">Main Page</a>
+    <a class="mdl-navigation__link" href="(1)DepartureMap.html">Schedule a Flight</a>
+    <a class="mdl-navigation__link" href="FlightDetailList.html">Fight Details</a>
+    <a class="mdl-navigation__link" href="FleetDetails.html">Fleet Information</a>
+  </nav>
+</div>
+
+<body style="background-image: url('images/1307272.jpg');background-repeat: no-repeat; background-size: cover;" onload="load()">
+
+<div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--8-col">
+<div style="width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 100px;
+  background-color: Orange;
+">
+<table>
+<tr>
+  <th>Departure Airport</th>
+  <th>Arrival Airport</th>
+</tr>
+<tr>
+  <td id="depairport"></td>
+  <td id="arrairport"></td>
+</tr>
+</table>
+</div>
+
+      <div style="width: 100px;
+        margin-left: 100px;
+        margin-top: 100px;
+      ">
+      <table class="mdl-data-table mdl-js-data-table" onload="load()">
+        <thead>
+          <tr>
+            <th class="mdl-data-table__cell--non-numeric">Plane type</th>
+            <th class="mdl-data-table__cell--non-numeric">Plane travel distance(km)</th>
+            <th class="mdl-data-table__cell--non-numeric">Status</th>
+            <th class="mdl-data-table__cell--non-numeric">Airline</th>
+            <th class="mdl-data-table__cell--non-numeric">Plane ID</th>
+            <th class="mdl-data-table__cell--non-numeric">Selection box</th>
+          </tr>
+        </thead>
+        <tbody id = "planeTable">
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric" id="plane0"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="dis0"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="stat0"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="air0"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="id0"></td>
+            <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Select</button></td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric" id="plane1"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="dis1"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="stat1"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="air1"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="id1"></td>
+            <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Select</button></td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric" id="plane2"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="dis2"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="stat2"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="air2"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="id2"></td>
+            <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Select</button></td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric" id="plane3"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="dis3"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="stat3"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="air3"></td>
+            <td class="mdl-data-table__cell--non-numeric" id="id3"></td>
+            <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Select</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <div style="margin-right: 10px;margin-top: 200px;">
+      <button id="confirmButton"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="toConfirmationPage()">Confirm flight</button>
+    </div>
+    <div style="padding-left: 10px; margin-right: 10px;margin-top: 200px;">
+      <button id="addWaypoint" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="toWaypointMap()">+Add a waypoint</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="scripts/FlightDetail2.js"></script>
+<script type="text/javascript" src="scripts/FlightShared.js"></script>
+</html>

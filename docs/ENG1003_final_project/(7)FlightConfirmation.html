@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+			<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+				<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+				<meta charset="utf-8">
+					<title>Flight Confirmation</title>
+				</head>
+				<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+				<div class="mdl-layout mdl-js-layout">
+					<header class="mdl-layout__header mdl-layout__header--scroll">
+						<div class="mdl-layout__header-row">
+							<!-- Title -->
+							<span class="mdl-layout-title">Flight Confirmation</span>
+						</div>
+					</header>
+					<div class="mdl-layout__drawer">
+						<span class="mdl-layout-title">Title</span>
+						<nav class="mdl-navigation">
+							<a class="mdl-navigation__link" href="(0)Mainpage.html">Main Page</a>
+						 <a class="mdl-navigation__link" href="(1)DepartureMap.html">Schedule a Flight</a>
+						 <a class="mdl-navigation__link" href="FlightDetailList.html">Fight Details</a>
+						 <a class="mdl-navigation__link" href="FleetDetails.html">Fleet Information</a>
+						</nav>
+					</div>
+					<main class="mdl-layout__content">
+						<div class="page-content">
+							<body>
+								<table class="mdl-data-table mdl-js-data-table">
+									<thead>
+										<style>
+            table, th, td {
+              border: 2px solid green;
+              border-collapse: collapse;
+              padding: 20px;
+              margin: 20px;
+              background: #ffe6e6
+            }
+            </style>
+													<tr>
+														<th class="mdl-data-table__cell--non-numeric" colspan = "2" style = "text-align:center" >Flight Details </th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Flight ID</td>
+														<td class="mdl-data-table__cell--non-numeric"id="fligthID"> (MK403) </td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Destination</td>
+														<td class="mdl-data-table__cell--non-numeric" id="arrivalInfo">(Arrival Country)(Arrival Airport)</td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Origin</td>
+														<td class="mdl-data-table__cell--non-numeric"id="departInfo">(Departure Country)(Departure Airport)</td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Waypoint</td>
+														<td class="mdl-data-table__cell--non-numeric"id="waypoints">(Waypoint Country)</td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Date</td>
+														<td class="mdl-data-table__cell--non-numeric"id="dateDeparture">(Date of Departure)</td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Time of Departure</td>
+														<td class="mdl-data-table__cell--non-numeric"id="timeDeparture">(Time of Departure)</td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Time of Arrival</td>
+														<td class="mdl-data-table__cell--non-numeric"id="timeArrival">(Arrival Time)</td>
+													</tr>
+													<tr>
+														<td class="mdl-data-table__cell--non-numeric">Weather at Arrival</td>
+														<td class="mdl-data-table__cell--non-numeric"id="weatherArrival">(Description of Weather)</td>
+													</tr>
+												</tbody>
+									</table>
+									<div class="mdl-cell mdl-cell--4-col">
+										<div style="margin-right: 10px;margin-top: 50px;">
+											<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="confirmFlight()">Confirm Flight</button>
+										</div>
+									</div>
+								</body>
+								<script type="text/javascript" src="scripts/FlightShared.js"></script>
+								<script type="text/javascript" src="scripts/flightConfirmation.js"></script>
+
+							</div>
+						</main>
+					</div>
+				</html>
