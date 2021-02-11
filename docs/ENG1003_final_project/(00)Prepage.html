@@ -1,9 +1,41 @@
 <html>
 
 <body onload="buffer()">
-<button onclick ="mainpage()">Begin</button>
+  <button onclick ="mainpage()">Begin</button>
+  <!--Since pages do not work anymore due to APIs lock add individual pages instead-->
+  <p>Most pages do not work as intended as access to some apis has been removed</p>
+  <h1>Subpages</h1>
+    <h2>When booking flight pages</h2>
+      <a href="(1)DepartureMap.html">Booking a flight with map</a>
+      <br>
+      <a href="(2)DepartureDetails.html">Showing departure details along with planes available</a>
+      <br>
+      <a href="(2b)NearestAirplane.html">If there are no planes available, it supposed to link to the nearest airport with planes available</a>
+      <br>
+      <a href="(3)ArrivalMap.html">Select arrival airport with a map</a>
+      <br>
+      <a href="(3b)NearestAirplaneMap.html">Selecting the nearest airport with the available plane will link to a different page</a>
+      <br>
+      <a href="(4)ArrivalDetails.html">User confirms flight details or add a waypoint</a>
+      <br>
+      <a href="(4b)ArrivalDetailsForNearest.html">Different page for confirmation page for when there are no airplane available</a>
+      <br>
+      <a href="(5)WaypointMap.html">User can add waypoints between arrival airport and departure airport</a>
+      <br>
+      <a href="(6)WaypointDetails.html">User confirm details for waypoints</a>
+      <br>
+      <a href="(7)FlightConfirmation.html">User confirm details for the entire flight</a>
+      <br>
+    <h2>
+      <a href="FleetDetails.html">List of available planes in the API</a>
+    </h2>
+    <h2> Pages of user flights</h2>
+      <a href="FlightDetailList.html">List of flights booked</a>
+      <br>
+      <a href="FlightInDetail.html">List of a flight booked in details</a>
+      <br>
+
+
 </body>
-
 <script type="text/javascript" src="scripts/Prepage.js"></script>
-
 </html>
